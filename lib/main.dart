@@ -1,25 +1,22 @@
 import 'package:flutter/material.dart';
 
+import 'home_page.dart';
+
+
 void main(){
   runApp(Myapp());
 }
 
 class Myapp extends StatelessWidget {
-  const Myapp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
+
+    int days = 30;
+    String name = 'Iyaana';
+
+
     return MaterialApp(
-      home:Material(
-        child: Center(
-          child: Container(
-            child: Text("Welcome to 60 days of Flutter"),
-          ),
-
-     ),
-      ),
+      home: HomePage(),
     );
-
-    
   }
 }
